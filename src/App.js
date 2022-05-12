@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect,  } from "react";
+import papa from "papaparse"
 import "./assets/App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -11,16 +12,34 @@ import "./assets/Page2.css";
 import "./assets/AboutUs.css";
 import Nav from "./components_Fathers/Nav";
 import Footer from "./components_Fathers/Footer";
-import ApiBdHackathon from "./ApiBdHackathon"
 
 const App = () => {
+  const [apiBdHackathon, setApiBdHackathon] = useState([]);
+  const API = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRLSgkrDdiA68XL2xzb5tsZvByO0hWoJbE7zi6kGXDaAx7w5BPTorE9LW4MHZutyouq3DXrpZCIqWl6/pub?output=csv";
+  const convertData = data => {
+    const json = data.map((line, index) => {
+      if (index > 0) {
+        let obj = {};
+        data[0].forEach((key, j) => (obj = { ...obj, [key]: line[j] }));
+        return obj;
+      }
+    })
+    json.shift();
+    setApiBdHackathon(json)
+  }
+  console.log(apiBdHackathon)
+  useEffect(() => {
+    fetch(API)
+      .then(result => result.text())
+      .then(text => papa.parse(text))
+      .then(data => convertData(data.data))
+  }, []);
   return (
     <div className="app-div-container">
       <div className="app-div-container-body">
         <Nav />
-        <ApiBdHackathon />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home apiBdHackathon={apiBdHackathon} setApiBdHackathon={setApiBdHackathon} />} />
           <Route path="/Page1" element={<Page1 />} />
           <Route path="/Page2" element={<Page2 />} />
           <Route path="/AboutUs" element={<AboutUs />} />
