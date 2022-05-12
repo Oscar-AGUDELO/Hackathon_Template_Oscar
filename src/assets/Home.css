@@ -2,6 +2,7 @@
     width: 100%;
     z-index:0;
     position: absolute;
+    top: 10%;
    
 }
 .gloApp{
@@ -15,10 +16,20 @@
 
 }
 .bubblePerso{
-    display: flex;
-    justify-content: center;
+    margin-left: 3rem;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+margin-top: 1rem;
     align-items: center;
+    width: 100%;
     
+}
+.bubblePerso > div:nth-child(1){
+    width: 47%;
+}
+.bubblePerso > div:nth-child(1) > div:nth-child(1){
+    width: 100%;
 }
 
 .bubblequestion {
@@ -29,12 +40,14 @@
     font-size: 20px;
     line-height: 120px;
     text-align: center;
-    width: 250px;
-    height: 120px;
+    width: auto;
     border-radius: 10px;
     padding: 0px;
     border: #0f0c0c solid 3px;
     z-index: 1;
+    margin-left: 13rem;
+margin-top: 3rem;
+margin-right: 15rem;
 }
 .bubblequestion:after {
     content: '';
@@ -71,12 +84,12 @@
     font-size: 20px;
     line-height: 120px;
     text-align: center;
-    width: 400px;
-    height: 120px;
+    width: auto;
     border-radius: 10px;
     padding: 0px;
     border: #0f0c0c solid 3px;
     z-index: 1;
+    margin-right: 21rem;
     
 }
 .bubbleresponse:after {
@@ -117,5 +130,12 @@
    flex-direction: row;
    justify-content: center;
    gap: 1em;
+   z-index: 3;
+   
 }
-
+.app-div-container-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+}
