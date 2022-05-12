@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
-const DisplayAll = ({ apiBdHackathon }) => {
-  const[currentQuestion, setCurrentQuestion] = useState(0);
-
-  console.log(
-    "hello" + apiBdHackathon.map((question) => question.Question_Enfant)
-  );
+const DisplayAll = ({ apiBdHackathon, currentQuestion }) => {
+ 
 
   return (
     <div>

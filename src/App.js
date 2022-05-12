@@ -8,10 +8,9 @@ import "./assets/Home.css";
 import "./assets/AboutUs.css";
 import Nav from "./components_Fathers/Nav";
 import Footer from "./components_Fathers/Footer";
-import DisplayAll from "./components_Fathers/DisplayAll";
 
 const App = () => {
-  const [apiBdHackathon, setApiBdHackathon] = useState([]);
+  const [apiBdHackathon, setApiBdHackathon] = useState(null);
   const API =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRLSgkrDdiA68XL2xzb5tsZvByO0hWoJbE7zi6kGXDaAx7w5BPTorE9LW4MHZutyouq3DXrpZCIqWl6/pub?output=csv";
   const convertData = (data) => {
@@ -37,7 +36,7 @@ const App = () => {
   if(!apiBdHackathon){
     return <p>Loading...</p>
   }
-  
+
   return (
     <div className="app-div-container">
       <div className="app-div-container-body">

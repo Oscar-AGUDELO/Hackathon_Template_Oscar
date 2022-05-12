@@ -1,30 +1,24 @@
 import React from "react";
 //import axios from "axios";
 
-function Button() {
-  //   const [question, setquestion] = useState([]);
+function Button({setCurrentQuestion, maximum, name, direction}) {
 
-  //   useEffect(() => {
-  //     const API = ``;
+    function handleClick() {
+      setCurrentQuestion((old) => {
+        console.log(old, maximum)
+        if(direction ==1 && old >= maximum)
+          return old
+        if(direction ==-1 && old <=0)
+          return old
+        return old + direction
+      });
+    }
 
-  //     axios
-  //       .get(API)
-  //       .then((res) => res.data)
-  //       .then((data) => {
-  //         setquestion(data);
-  //       })
-  //       .catch((e) => console.error(e));
-  //   }, []);
-
-  const handleClick = () => {};
-
-  return (
-    <div>
-      <button type="button" onClick={handleClick}>
-        {<i class="fa-solid fa-play"></i>}
-      </button>
-    </div>
-  );
+    return (
+      <div>
+        <button onClick={handleClick}>{<i className={name}></i>}</button>
+      </div>
+    );
 }
 
 export default Button;
