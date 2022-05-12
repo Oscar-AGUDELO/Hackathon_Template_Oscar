@@ -16,8 +16,8 @@ const Home = ({ apiBdHackathon }) => {
       </div>
 
       <div className="buttonPlay">
-        <Button setCurrentQuestion={setCurrentQuestion} maximum={apiBdHackathon.length-1} name="fa-solid fa-play" direction={1}/>
-        <Button setCurrentQuestion={setCurrentQuestion} maximum={apiBdHackathon.length-1} name="fa-solid fa-pause" direction={-1} />
+        <Button setCurrentQuestion={setCurrentQuestion} maximum={apiBdHackathon.length-1} name="fa-solid fa-backward" direction={-1} />
+        <Button setCurrentQuestion={setCurrentQuestion} maximum={apiBdHackathon.length-1} name="fa-solid fa-forward" direction={1}/>
       </div>
     </div>
   );

@@ -105,9 +105,17 @@
     margin-left: -13px;
     display: block;
 }
+
 .bubblequestion > p:nth-child(1){
     line-height: 37px;
 }
 .bubbleresponse > p:nth-child(1){
     line-height: 37px;
 }
+.buttonPlay{
+   display: flex; 
+   flex-direction: row;
+   justify-content: center;
+   gap: 1em;
+}
+
