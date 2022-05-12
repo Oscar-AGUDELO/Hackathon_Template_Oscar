@@ -1,4 +1,7 @@
 import React from "react";
+import Button from "../components_Fathers/Button"
+import "../assets/button.css"
+//import background from "../assets/background.svg"
 // import NameOfComponent from "../components_Fathers/RandomApi";
 // import NameOfComponent from "../components_Fathers/RandomApi";
 // import NameOfComponent from "../components_Fathers/RandomApi";
@@ -6,8 +9,10 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
-      <h2>Home</h2>
+    <div className="backgroundapp">
+      <div className="buttonPlay">
+      <Button/>
+      </div>
     </div>
   );
 };
