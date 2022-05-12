@@ -1,6 +1,8 @@
 .backgroudapp{
     width: 100%;
-    z-index: 0;
+    z-index:0;
+    position: absolute;
+   
 }
 .gloApp{
     display: flex;
@@ -16,10 +18,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    
 }
 
-.bubble {
+.bubblequestion {
     position: relative;
     background: #f5f5f5;
     color: #FFFFFF;
@@ -32,8 +34,52 @@
     border-radius: 10px;
     padding: 0px;
     border: #0f0c0c solid 3px;
+    z-index: 1;
 }
-.bubble:after {
+.bubblequestion:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: #f5f5f5 transparent transparent transparent;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 1;
+}
+.bubblequestion:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 0;
+    border-style: solid;
+    border-width: 23px 23px 0 0;
+    border-color: #0f0c0c transparent transparent transparent;
+    bottom: -26px;
+    left: 50%;
+    margin-left: -13px;
+    display: block;
+}
+.bubbleresponse {
+    position: relative;
+    background: #f5f5f5;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 120px;
+    text-align: center;
+    width: 400px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 0px;
+    border: #0f0c0c solid 3px;
+    z-index: 1;
+    
+}
+.bubbleresponse:after {
     content: '';
     position: absolute;
     display: block;
@@ -46,7 +92,7 @@
     left: 50%;
     margin-left: -10px;
 }
-.bubble:before {
+.bubbleresponse:before {
     content: '';
     position: absolute;
     width: 0;
@@ -58,4 +104,10 @@
     left: 50%;
     margin-left: -13px;
     display: block;
+}
+.bubblequestion > p:nth-child(1){
+    line-height: 37px;
+}
+.bubbleresponse > p:nth-child(1){
+    line-height: 37px;
 }

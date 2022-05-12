@@ -9,7 +9,7 @@ const Home = ({ apiBdHackathon }) => {
   return (
     <div className="gloApp">
       <div className="bubblePerso">
-        <div className="bubble">
+        <div >
           <DisplayAll apiBdHackathon={apiBdHackathon} currentQuestion={currentQuestion}/>
         </div>
         <img src={background} alt="backgroundapp" className="backgroudapp" />

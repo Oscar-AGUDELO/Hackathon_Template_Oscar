@@ -28,18 +28,8 @@ h2{
 p{
   color: var(--secondary-color);
 }
-.app-div-container{
-  background-color: white;
-  display: flex; 
-  flex-direction: column;
-  min-height: 100vh; 
 
-}
-.app-div-container-body{
- 
 
-  flex: 1;
-}
 .nav-header{
   display: flex;
   align-items: center;
