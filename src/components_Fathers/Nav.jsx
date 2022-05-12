@@ -24,9 +24,7 @@ function Nav() {
   return (
     <div className="nav-container-general">
       <div className="nav-header">
-        <div className="nav-name">
-          {/* <h1>NAME HERE</h1> */}
-        </div>
+        <div className="nav-name">{/* <h1>NAME HERE</h1> */}</div>
         <button type="button" onClick={toggleNav} className="nav-btn">
           {" "}
           <img src={zLogo} alt="burger" className="nav-img-logo" />
