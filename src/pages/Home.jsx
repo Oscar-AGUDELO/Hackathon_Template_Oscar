@@ -34,13 +34,9 @@ const Home = () => {
         
     
 	};
+  
   const handleClick = () => {
-    for (let i = 0; i < apiBdHackathon.length; i++) {
-      setcount(apiBdHackathon[i].Question_Enfant)
-        console.log(apiBdHackathon[i].Question_Enfant)
-           
-       
-    }     
+    getJoke()
     }
     
   return (
@@ -48,11 +44,11 @@ const Home = () => {
     <div className="backgroundapp">
         <div className="bubble">
           
-            {/* {apiBdHackathon.map((question) => (
+             {/* {apiBdHackathon.map((question) => (
             <SingleQuestion question={question} key={question.id}/>
             //<p>{result.Question_Enfant}</p>
             
-          ))}     */}
+          ))}      */}
         </div>
         <p>{apiBdHackathon.Question_Enfant}</p>
           <img src={background} alt="backgroundapp" className="backgroudapp" />
