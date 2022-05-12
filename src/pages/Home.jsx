@@ -4,24 +4,17 @@ import "../assets/button.css"
 import background from "../assets/background.jpg";
 
 
-const Home = ( { apiBdHackathon }) => {
+const Home = () => {
   return (
     <div className="backgroundapp">
-      <div className="buttonPlay">
         <div>
-        {apiBdHackathon.map((question, index) => (<p key={index}>{question.Question_Enfant}</p>))}
+          <img src={background} alt="backgroundapp" className="backgroudapp" />
+          <div className="buttonPlay">
+            <Button />
+          </div>
         </div>
-      <Button />
-
-    <div >
-      <div>
-        <img src={background} className="backgroudapp" />
-        <div className="buttonPlay">
       </div>
-      
-      </div>
-    </div>
-  );
+      );
 };
 
-export default Home;
+      export default Home; 
