@@ -13,6 +13,7 @@ function Nav() {
   useEffect(() => {
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
+      console.log(screenWidth);
     };
     window.addEventListener("resize", changeWidth);
 
@@ -24,7 +25,7 @@ function Nav() {
     <div className="nav-container-general">
       <div className="nav-header">
         <div className="nav-name">
-          <h1>NAME HERE</h1>
+          {/* <h1>NAME HERE</h1> */}
         </div>
         <button type="button" onClick={toggleNav} className="nav-btn">
           {" "}
