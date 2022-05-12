@@ -3,7 +3,7 @@
 :root {
   --primary-color: #00bfff;
   --secondary-color: #f0aa30;
-  --bloc-background: #1e1e1e;
+  --bloc-background: white;
   --button-color: #f0aa30;
   --font-family: "Roboto";
   --font-size: 1em;
@@ -30,19 +30,14 @@ p{
   color: white;
 }
 .app-div-container{
-  background-color: #1e1e1e;
+  background-color: white;
   display: flex; 
   flex-direction: column;
   min-height: 100vh; 
 
 }
 .app-div-container-body{
-  background-image: url("../assets/background.svg");
-  position: fixed; 
-top: 0; 
-left: 0; 
-min-width: 100%;
-min-height: 100%;
+ 
 
   flex: 1;
 }
