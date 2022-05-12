@@ -1,30 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 //import axios from "axios";
 
-
-
-
 function Button() {
-//   const [question, setquestion] = useState([]);
+  //   const [question, setquestion] = useState([]);
 
-//   useEffect(() => {
-//     const API = ``;
+  //   useEffect(() => {
+  //     const API = ``;
 
-//     axios
-//       .get(API)
-//       .then((res) => res.data)
-//       .then((data) => {
-//         setquestion(data);
-//       })
-//       .catch((e) => console.error(e));
-//   }, []);
+  //     axios
+  //       .get(API)
+  //       .then((res) => res.data)
+  //       .then((data) => {
+  //         setquestion(data);
+  //       })
+  //       .catch((e) => console.error(e));
+  //   }, []);
+
+  const handleClick = () => {};
 
   return (
-    <div >
-           <button type="button">
-          {<i class="fa-solid fa-play"></i>}
-
-        </button>
+    <div>
+      <button type="button" onClick={handleClick}>
+        {<i class="fa-solid fa-play"></i>}
+      </button>
     </div>
   );
 }
