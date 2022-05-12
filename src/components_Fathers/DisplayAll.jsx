@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
-const DisplayAll = ({ apiBdHackathon }) => {
-  console.log(
-    "hello" + apiBdHackathon.map((question) => question.Question_Enfant)
-  );
+const DisplayAll = ({ apiBdHackathon, currentQuestion }) => {
+ 
 
   return (
     <div>
       <div className="question">
-        <p>{apiBdHackathon.Question_Enfant}</p>
+        <p>{apiBdHackathon[currentQuestion].Question_Enfant}</p>
       </div>
       <div className="response">
-        <p>{}</p>
+        <p>{apiBdHackathon[currentQuestion].Reponse_Parent}</p>
       </div>
       <div className="links">
-        <p>{}</p>
+        <p>{apiBdHackathon[currentQuestion].Titre_du_lien}</p>
+        <p>{apiBdHackathon[currentQuestion].URL}</p>
       </div>
     </div>
   );
