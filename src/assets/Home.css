@@ -119,3 +119,25 @@
    gap: 1em;
 }
 
+.containerUrl{
+
+ 
+
+    border : 2px solid rgb(27, 26, 26);
+    border-radius: 5px;
+    background-color: #161363;
+    padding: 20px;
+    position: relative;
+    left: -100px;
+    z-index: 1;
+    max-width: 20rem;
+    min-height: 10rem;
+
+}
+.containerUrl h2{
+    font-size: 1.5rem;
+}
+
+.containerUrl>a{
+    color: white;
+}
