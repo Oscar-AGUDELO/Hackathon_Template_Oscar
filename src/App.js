@@ -11,12 +11,14 @@ import "./assets/Page2.css";
 import "./assets/AboutUs.css";
 import Nav from "./components_Fathers/Nav";
 import Footer from "./components_Fathers/Footer";
+import ApiBdHackathon from "./ApiBdHackathon"
 
 const App = () => {
   return (
     <div className="app-div-container">
       <div className="app-div-container-body">
         <Nav />
+        <ApiBdHackathon />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Page1" element={<Page1 />} />
