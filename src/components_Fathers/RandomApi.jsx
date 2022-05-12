@@ -3,8 +3,7 @@ import axios from "axios";
 
 const RandomApi = () => {
   const [vehicle, setVehicle] = useState({});
-  const API = "https://random-data-api.com/api/vehicle/random_vehicle";
-
+  const API = "http://hp-api.herokuapp.com/api/characters/students ";
   useEffect(() => {
     const fetchVehicle = async () => {
       try {
