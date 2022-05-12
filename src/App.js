@@ -33,6 +33,11 @@ const App = () => {
       .then((text) => papa.parse(text))
       .then((data) => convertData(data.data));
   }, []);
+
+  if(!apiBdHackathon){
+    return <p>Loading...</p>
+  }
+  
   return (
     <div className="app-div-container">
       <div className="app-div-container-body">
