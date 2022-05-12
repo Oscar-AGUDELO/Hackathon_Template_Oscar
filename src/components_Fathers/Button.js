@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 //import axios from "axios";
+import handleClick from "../pages/Home"
 
 
 
 
-function Button() {
+function Button({handleClick}) {
 //   const [question, setquestion] = useState([]);
 
 //   useEffect(() => {
@@ -21,7 +22,7 @@ function Button() {
 
   return (
     <div >
-           <button type="button">
+           <button type="button" onClick={handleClick}>
           {<i class="fa-solid fa-play"></i>}
 
         </button>

@@ -27,7 +27,7 @@ const App = () => {
     json.shift();
     setApiBdHackathon(json)
   }
-  console.log(apiBdHackathon)
+  
   useEffect(() => {
     fetch(API)
       .then(result => result.text())

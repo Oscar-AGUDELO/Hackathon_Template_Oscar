@@ -19,6 +19,7 @@ const ApiBdHackathon = ({ apiBdHackathon, setApiBdHackathon, }) => {
       .then(result => result.text())
       .then(text => papa.parse(text))
       .then(data => convertData(data.data))
+    
   }, []);
 
   return (
