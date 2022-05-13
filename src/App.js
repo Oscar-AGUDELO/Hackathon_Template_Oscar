@@ -45,6 +45,7 @@ const App = () => {
     <div className="app-div-container">
       <div className="app-div-container-body">
         <Nav />
+    <Music />
         <Routes>
           <Route
             path="/"
