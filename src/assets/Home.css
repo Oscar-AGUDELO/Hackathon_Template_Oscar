@@ -191,3 +191,20 @@
     margin-top: 2rem;
     width: 80%;
 }
+#jusdefruit{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 80%;
+}
+#toxic{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 40%;
+    padding: 2rem;
+}
