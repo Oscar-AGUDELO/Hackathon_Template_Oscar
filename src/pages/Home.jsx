@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "../components_Fathers/Button";
 import "../assets/button.css";
-import background from "../assets/background.jpg";
+import background from "../assets/copie_background.jpg";
 import DisplayAll from "../components_Fathers/DisplayAll";
 
 const Home = ({ apiBdHackathon }) => {
