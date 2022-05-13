@@ -13,6 +13,7 @@
   font-size: 5rem;
   z-index: 2;
 }
+
 .bubblePerso {
   margin-left: 3rem;
   width: 100%;
@@ -25,9 +26,7 @@
 .bubblePerso > div:nth-child(1) {
   width: 47%;
 }
-.bubblePerso > div:nth-child(1) > div:nth-child(1) {
-  width: 100%;
-}
+
 
 .bubblequestion {
   position: relative;
@@ -148,7 +147,7 @@
 
   border: 2px solid rgb(27, 26, 26);
   border-radius: 5px;
-  background-color: #161363;
+  background-color: #82b479;
   padding: 20px;
   position: absolute;
   top: 450px;
@@ -166,4 +165,12 @@
 .containerUrl > a {
   color: white;
   overflow-wrap: break-word;
+}
+.buttonPlay > div:nth-child(2) > button:nth-child(1){
+    background-color: transparent;
+    border: 0;
+}
+.buttonPlay > div:nth-child(1) > button:nth-child(1){
+    background-color: transparent;
+    border: 0;
 }
