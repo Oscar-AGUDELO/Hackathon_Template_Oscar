@@ -8,6 +8,7 @@ import "./assets/Home.css";
 import "./assets/AboutUs.css";
 import Nav from "./components_Fathers/Nav";
 import Footer from "./components_Fathers/Footer";
+import Music from "./components_Fathers/Music";
 
 
 const App = () => {
