@@ -3,8 +3,10 @@ import Button from "../components_Fathers/Button";
 import "../assets/button.css";
 import background from "../assets/copie_background.jpg";
 import DisplayAll from "../components_Fathers/DisplayAll";
+import dechetElectro from "../assets/dechetElctro.jpg"
 
 const Home = ({ apiBdHackathon }) => {
+ 
   const[currentQuestion, setCurrentQuestion] = useState(0);
   return (
     <div className="gloApp">

@@ -13,7 +13,7 @@ function Music() {
   useEffect(() => {
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
-      console.log(screenWidth);
+     // console.log(screenWidth);
     };
     window.addEventListener("resize", changeWidth);
 

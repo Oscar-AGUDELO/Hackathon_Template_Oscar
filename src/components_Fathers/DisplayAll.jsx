@@ -1,6 +1,9 @@
 import React from "react";
+import Image from "../components_Fathers/Image.jsx";
 
 const DisplayAll = ({ apiBdHackathon, currentQuestion }) => {
+        
+  console.log(apiBdHackathon[currentQuestion].ID);
   return (
     // modifier class
     <>
@@ -9,6 +12,7 @@ const DisplayAll = ({ apiBdHackathon, currentQuestion }) => {
       </div>
       <div className="bubblequestion">
         <p>{apiBdHackathon[currentQuestion].Question_Enfant}</p>
+        <Image apiBdHackathon={apiBdHackathon} currentQuestion={currentQuestion} />
       </div>
 
       <div className="containerUrl">

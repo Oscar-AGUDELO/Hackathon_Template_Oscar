@@ -173,3 +173,21 @@
     background-color: transparent;
     border: 0;
 }
+.bubblePerso > div:nth-child(1){
+    z-index: 10;
+}
+#dechetVet{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+#dechetElectro{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 80%;
+}
