@@ -19,7 +19,7 @@ const DisplayAll = ({ apiBdHackathon, currentQuestion }) => {
         <h2>{apiBdHackathon[currentQuestion].Titre_du_lien}</h2>
         <p>{apiBdHackathon[currentQuestion].Description}</p>
         <a href={apiBdHackathon[currentQuestion].URL} target="_blank">
-          {apiBdHackathon[currentQuestion].URL}
+          Cliquez ici pour plus d'informations !
         </a>
       </div>
     </>

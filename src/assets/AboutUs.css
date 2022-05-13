@@ -6,7 +6,7 @@
 }
 
 .planet {
-  width: 25%;
+  max-height: 30vh;;
 }
 
 .container {

@@ -360,11 +360,9 @@
 }
 .buttonPlay > div:nth-child(2) > button:nth-child(1){
     background-color: transparent;
-    border: 0;
 }
 .buttonPlay > div:nth-child(1) > button:nth-child(1){
     background-color: transparent;
-    border: 0;
 }
 }
 
