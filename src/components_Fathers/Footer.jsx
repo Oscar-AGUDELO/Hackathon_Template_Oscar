@@ -4,7 +4,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="footer-container-general">
-      <p>Name website here - Footer</p>
+      <p>One two tri, viva l’écologie !</p>
     </div>
   );
 }
