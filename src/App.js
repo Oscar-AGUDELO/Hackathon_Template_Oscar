@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import papa from "papaparse";
 import "./assets/App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import "./assets/Home.css";
 import "./assets/AboutUs.css";
 import Nav from "./components_Fathers/Nav";
 import Footer from "./components_Fathers/Footer";
-import Music from "./components_Fathers/Music";
+
 
 const App = () => {
   const [apiBdHackathon, setApiBdHackathon] = useState(null);
@@ -20,29 +20,30 @@ const App = () => {
         let obj = {};
         data[0].forEach((key, j) => (obj = { ...obj, [key]: line[j] }));
         return obj;
+        
       }
     });
     json.shift();
     setApiBdHackathon(json);
   };
-  console.log(apiBdHackathon);
+  //console.log(apiBdHackathon);
 
   useEffect(() => {
     fetch(API)
       .then((result) => result.text())
       .then((text) => papa.parse(text))
       .then((data) => convertData(data.data));
+      
   }, []);
 
   if(!apiBdHackathon){
     return <p>Loading...</p>
   }
-
+  
   return (
     <div className="app-div-container">
       <div className="app-div-container-body">
         <Nav />
-        <Music />
         <Routes>
           <Route
             path="/"
@@ -56,6 +57,7 @@ const App = () => {
           <Route path="/AboutUs" element={<AboutUs />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 };

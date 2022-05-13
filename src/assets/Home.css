@@ -395,6 +395,7 @@
 }
 .bubblePerso > div:nth-child(1) {
   width: 47%;
+  z-index: 10;
 }
 .bubblePerso div{
   margin-right: 0rem;
@@ -557,4 +558,36 @@
     background-color: transparent;
     border: 0;
 }
+
+#dechetVet{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+#dechetElectro{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 80%;
+}
+#jusdefruit{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 80%;
+}
+#toxic{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 40%;
+    padding: 2rem;
 }

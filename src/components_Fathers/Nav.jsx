@@ -13,7 +13,7 @@ function Nav() {
   useEffect(() => {
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
-      console.log(screenWidth);
+     // console.log(screenWidth);
     };
     window.addEventListener("resize", changeWidth);
 
@@ -35,13 +35,12 @@ function Nav() {
       {toggleMenu && (
         <nav className="nav-nav-burger-container">
           <Link to="/" className="nav-item-burger">
-            Home
+            Accueil
           </Link>
           <Link to="/AboutUs" className="nav-item-burger">
-            About Us
+            A propos
           </Link>
         </nav>
-
       )}
     </div>
   );

@@ -4,6 +4,7 @@ import "../assets/button.css";
 import background from "../assets/copie_background.jpg";
 import background730 from "../assets/background730.jpg";
 import DisplayAll from "../components_Fathers/DisplayAll";
+import dechetElectro from "../assets/dechetElctro.jpg"
 
 const Home = ({ apiBdHackathon }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -35,8 +36,6 @@ const Home = ({ apiBdHackathon }) => {
           <img src={background} alt="backgroundapp" className="backgroudapp" />
         }
       </div>
-
-
     </div>
   );
 };
