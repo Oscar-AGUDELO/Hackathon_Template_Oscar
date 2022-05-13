@@ -142,7 +142,7 @@
   margin-left: 2em;
   border: 2px solid rgb(27, 26, 26);
   border-radius: 5px;
-  background-color: #82b479;
+  background-color: #9acb92;
   padding: 20px;
   position: absolute;
   top: 450px;
@@ -153,8 +153,8 @@
   line-height: var(--line-height);
 }
 .containerUrl h2 {
-  font-size: 1.5rem;
-  color: #F99F46;
+  font-size: 1.5rem;;
+  color: #AB443F;
 }
 
 .containerUrl p {
