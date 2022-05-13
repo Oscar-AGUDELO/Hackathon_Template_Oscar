@@ -139,7 +139,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-
+  margin-left: 2em;
   border: 2px solid rgb(27, 26, 26);
   border-radius: 5px;
   background-color: #82b479;
@@ -154,7 +154,11 @@
 }
 .containerUrl h2 {
   font-size: 1.5rem;
-  color: var(--button-color);
+  color: #F99F46;
+}
+
+.containerUrl p {
+  color: #233863;
 }
 
 .containerUrl > a {
