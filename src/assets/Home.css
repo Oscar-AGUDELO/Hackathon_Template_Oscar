@@ -573,7 +573,7 @@
     border: 5px solid #9acb92;
     border-radius: 20px;
     margin-top: 2rem;
-    width: 80%;
+    width: 60%;
 }
 #jusdefruit{
     position: absolute;
@@ -591,4 +591,102 @@
     margin-top: 2rem;
     width: 40%;
     padding: 2rem;
+}
+#recytel{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 70%;
+    padding: 2rem;
+}
+#recymedi{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 70%;
+    
+}
+#conpost{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 70%;
+}
+#recybout{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 70%;
+}
+#recypil{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 90%;
+}
+#recycouche{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 60%;
+}
+#recytri{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 90%;
+}
+#recylab{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 90%;
+}
+#recychant{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 90%;
+}
+#recyrobe{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 90%;
+}
+#recyamp{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 90%;
+}
+#recyled{
+    position: absolute;
+    transform: rotate(350deg);
+    border: 5px solid #9acb92;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 90%;
 }
