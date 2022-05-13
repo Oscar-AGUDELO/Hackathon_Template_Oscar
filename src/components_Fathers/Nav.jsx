@@ -37,16 +37,11 @@ function Nav() {
           <Link to="/" className="nav-item-burger">
             Home
           </Link>
-          <Link to="/Page1" className="nav-item-burger">
-            Page 1
-          </Link>
-          <Link to="/Page2" className="nav-item-burger">
-            Page 2
-          </Link>
           <Link to="/AboutUs" className="nav-item-burger">
             About Us
           </Link>
         </nav>
+
       )}
     </div>
   );

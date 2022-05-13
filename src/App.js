@@ -8,6 +8,7 @@ import "./assets/Home.css";
 import "./assets/AboutUs.css";
 import Nav from "./components_Fathers/Nav";
 import Footer from "./components_Fathers/Footer";
+import Music from "./components_Fathers/Music";
 
 const App = () => {
   const [apiBdHackathon, setApiBdHackathon] = useState(null);
@@ -41,6 +42,7 @@ const App = () => {
     <div className="app-div-container">
       <div className="app-div-container-body">
         <Nav />
+        <Music />
         <Routes>
           <Route
             path="/"
@@ -54,7 +56,6 @@ const App = () => {
           <Route path="/AboutUs" element={<AboutUs />} />
         </Routes>
       </div>
-      <Footer />
     </div>
   );
 };
