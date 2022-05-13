@@ -1,38 +1,34 @@
-.backgroudapp{
-    width: 100%;
-    z-index:0;
-    position: absolute;
-    top: 10%;
-   
+.backgroudapp {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 10%;
 }
-.gloApp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.gloApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.fa-regular{
-    font-size: 5rem;
-    z-index: 2;
+.fa-regular {
+  font-size: 5rem;
+  z-index: 2;
+}
 
+.bubblePerso {
+  margin-left: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  align-items: center;
+  width: 100%;
 }
-.bubblePerso{
-    margin-left: 3rem;
-width: 100%;
-display: flex;
-justify-content: flex-end;
-margin-top: 1rem;
-    align-items: center;
-    width: 100%;
-    
-
-}
-.bubblePerso > div:nth-child(1){
-    width: 47%;
+.bubblePerso > div:nth-child(1) {
+  width: 47%;
 }
 
 
 .bubblequestion {
-
   position: relative;
   background: #f5f5f5;
   color: #ffffff;
@@ -48,7 +44,6 @@ margin-top: 1rem;
   margin-left: 13rem;
   margin-top: 3rem;
   margin-right: 15rem;
-
 }
 
 .bubblequestion:after {
@@ -164,6 +159,7 @@ margin-top: 1rem;
 }
 .containerUrl h2 {
   font-size: 1.5rem;
+  color: var(--button-color);
 }
 
 .containerUrl > a {
